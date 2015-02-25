@@ -7,6 +7,7 @@ install:
     - cabal unpack wai-logger
     - mv wai-logger-* wai-logger
     - cabal install hspec doctest HTTP cabal-meta cabal-src
+    - cabal list --installed --simple-output
     - cabal-meta install --force-reinstalls
 
 script: mega-sdist --test
