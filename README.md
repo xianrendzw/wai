@@ -9,3 +9,4 @@ Code can be written that works with any web framework targeting WAI.
 [Documentation](http://www.yesodweb.com/book/web-application-interface)
 
 [Haddock Documentation](http://hackage.haskell.org/package/wai)
+
