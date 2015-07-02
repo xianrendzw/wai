@@ -70,8 +70,8 @@ newContext = Context <$> newIORef defaultSettings
                      <*> newIORef 0
                      <*> newTQueueIO
                      <*> newPriorityTree
-                     <*> (newDynamicTableForEncoding 4096 >>= newIORef)
-                     <*> (newDynamicTableForDecoding 4096 >>= newIORef)
+                     <*> (newDynamicTableForEncoding defaultDynamicTableSize >>= newIORef)
+                     <*> (newDynamicTableForDecoding defaultDynamicTableSize >>= newIORef)
                      <*> newEmptyMVar
                      <*> newTVarIO defaultInitialWindowSize
 
